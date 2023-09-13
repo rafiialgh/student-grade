@@ -77,10 +77,10 @@
         </tr>
       </thead>
       <tbody>
-        @foreach($data as $data)
+        @foreach($data as $index => $data)
         <tr>
           <td>
-            {{ $data->id }}
+            {{ $index+1 }}
           </td>
           <td>
             {{ $data->nama }}
