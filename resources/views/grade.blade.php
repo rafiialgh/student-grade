@@ -21,30 +21,30 @@
           aria-describedby="inputGroup-sizing-sm">
       </div>
 
-      <h3 class="mt-5">Nilai Mahasiswa</h3>
+      <h3 class="mt-5">Nilai mahasiswa</h3>
       <div class="input-group input-group-sm mb-3">
         <span class="input-group-text" id="inputGroup-sizing-sm">Quiz</span>
-        <input type="text" name="quiz" class="form-control" aria-label="Sizing example input"
+        <input type="text" step="0.01" name="quiz" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
       <div class="input-group input-group-sm mb-3">
         <span class="input-group-text" id="inputGroup-sizing-sm">Tugas</span>
-        <input type="text" name="tugas" class="form-control" aria-label="Sizing example input"
+        <input type="text" step="0.01" name="tugas" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
       <div class="input-group input-group-sm mb-3">
         <span class="input-group-text" id="inputGroup-sizing-sm">Absensi</span>
-        <input type="text" name="absen" class="form-control" aria-label="Sizing example input"
+        <input type="text" step="0.01" name="absen" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
       <div class="input-group input-group-sm mb-3">
         <span class="input-group-text" id="inputGroup-sizing-sm">Praktek</span>
-        <input type="text" name="praktek" class="form-control" aria-label="Sizing example input"
+        <input type="text" step="0.01" name="praktek" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
       <div class="input-group input-group-sm mb-3">
         <span class="input-group-text" id="inputGroup-sizing-sm">UAS</span>
-        <input type="text" name="uas" class="form-control" aria-label="Sizing example input"
+        <input type="text" step="0.01" name="uas" class="form-control" aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-sm">
       </div>
       <button type="submit" class="btn btn-primary btn-sm">Submit</button>
@@ -60,7 +60,7 @@
 
 <div class="border border-2 p-3 mt-4 rounded mb-5">
   <div>
-    <h3>Table Data Nilai Mahasiswa</h3>
+    <h3>Table data nilai mahasiswa</h3>
     <table class="table table-bordered table-hover">
       <thead>
         <tr>

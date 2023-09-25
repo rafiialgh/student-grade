@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Charts\studentChart;
 use App\Models\student;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class StudentController extends Controller
 {
@@ -22,20 +21,20 @@ class StudentController extends Controller
 
         $nama = $request->nama;
         $nim = $request->nim;
-        $quiz = $request->quiz;
-        $tugas = $request->tugas;
-        $absen = $request->absen;
-        $praktek = $request->praktek;
-        $uas = $request->uas;
+        $quiz = str_replace(",",".", $request->quiz);
+        $tugas = str_replace(",",".", $request->tugas);
+        $absen = str_replace(",",".", $request->absen);
+        $praktek = str_replace(",",".", $request->praktek);
+        $uas = str_replace(",",".", $request->uas);
 
         $validate_data = $request->validate([
             'nama' => 'required',
             'nim' => 'required',
-            'quiz' => 'required|numeric|max:100',
-            'tugas' => 'required|numeric|max:100',
-            'absen' => 'required|numeric|max:100',
-            'praktek' => 'required|numeric|max:100',
-            'uas' => 'required|numeric|max:100'
+            'quiz' => 'required|max:100',
+            'tugas' => 'required|max:100',
+            'absen' => 'required|max:100',
+            'praktek' => 'required|max:100',
+            'uas' => 'required|max:100'
         ]);
 
         $insert = new student();

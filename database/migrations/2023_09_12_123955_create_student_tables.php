@@ -15,12 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->integer('nim');
-            $table->integer('quiz');
-            $table->integer('tugas');
-            $table->integer('absen');
-            $table->integer('praktek');
-            $table->integer('uas');
-            $table->integer('nilai_akhir');
+            $table->float('quiz');
+            $table->float('tugas');
+            $table->float('absen');
+            $table->float('praktek');
+            $table->float('uas');
+            $table->float('nilai_akhir');
             $table->string('grade');
             $table->timestamps();
         });
